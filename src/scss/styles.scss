@@ -1,2 +1,40 @@
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
+
+$dark-blue:  #6CA3C8; 
+$light-blue: #DEE8F1;
+$medium-blue:#B8C8DF;
+$light-gray:#EFEEEC;
+$gray: #EAE5E2;
+$dark-gray:#726258;
+
+// Header
+#top-bar {
+  background-color: $dark-blue;
+}
+
+// Main Content
+// Banner
+#banner {
+  background: url(../img/mic-lateral.jpg) no-repeat fixed;
+}
+
+// Boxes
+#boxes .card-content a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+// Footer
+#footer-links li {
+  list-style: none;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+#social-media li {
+  background-color: papayawhip;
+}
+

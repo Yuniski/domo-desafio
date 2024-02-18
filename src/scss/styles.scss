@@ -1,4 +1,4 @@
-// Import all of Bootstrap's CSS
+// Imports, variables and general styles
 @import "bootstrap/scss/bootstrap";
 
 $darker-blue:  #0D1321; 
@@ -14,22 +14,28 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal;
-}
-
-.lato-light {
-  font-weight: 300;
-}
+  letter-spacing: 0.5px;
   
-.lato-bold {
-  font-weight: 700;
+  .lato-light {
+    font-weight: 300;
+  }
+    
+  .lato-bold {
+    font-weight: 700;
+  }
 }
 
 // Header
+#hidden-box {
+  height: 96px;
+}
+
 #top-bar {
   background-color: $darker-blue;
 
   a {
     color: $light;
+    text-decoration: none;
   }
 
   :hover {
@@ -41,13 +47,17 @@ body {
   }
 }
 
-#hidden-box {
-  height: 96px;
-}
-
-#top-nav a {
-  color: $darker-blue;
+// Nav Menu
+#top-nav {
+  a {
+    color: $darker-blue;
+  }
   
+  a:hover {
+    color: $medium-blue;
+    padding-bottom: 2px;
+    border-bottom: 1px solid $medium-blue;
+  }
 }
 
 // Main Content
@@ -55,7 +65,6 @@ body {
 #banner {
   background: url(../img/vinyl.jpg) no-repeat;
   height: 900px;
-
   
   h1 {
     color: $darker-blue;
@@ -68,8 +77,11 @@ body {
 }
 
 // Boxes
-
 #boxes {
+  .card {
+    padding: 1.5rem;
+  }
+
   .card:first-child {
     background-color: $dark-blue;
   }
@@ -80,77 +92,81 @@ body {
 
   .card:nth-child(3) {
     background-color: $gray-blue;
-
-    .card-content {
-      color: $darker-blue;
-    }
+    color: $dark-blue;
   }
 
   .card:last-child {
     background-color: $light-blue;
   }
 
-  .card-content a {
-    color: $light;
-    text-decoration: none;
-    text-transform: uppercase;
+  .card-content {
+    a {
+      color: $light;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    a:hover {
+      color: $light-gray-blue;
+    }
   }
   
-  .card-btn a {
-    background-color: transparent;
+  .card-btn {
+    a {
+      background-color: transparent;
+      border-color: $light;
+      color: $light;
+    }
 
-    :hover {
-      color: #f8f9fa;
+    a:hover {
+      color: $dark-blue;
+      font-weight: 700;
+      background-color: $light;
     }
   }
 
   .card-text {
     color:$light;
   }
-  
 }
 
 //Articles
-
 #articles {
   a {
     background-color: $medium-blue;
     color: $light;
   }
-
 }
 
 #article-2 {
   background-color: $light-gray-blue;
-  
 }
 
 // Footer
-
 #footer {
   background-color: $darker-blue;
-}
-
-#contact, #social-media h4 {
-  color: $light;
-}
-
-#footer-links a {
-  color: $light;
-}
-
-#footer-links li {
-  list-style: none;
-
-  a {
-    text-decoration: none;
+  
+  #contact, #social-media h4 {
+    color: $light;
   }
-
-  :hover {
-    color: $light-blue;
+  
+  #footer-links a {
+    color: $light;
+  }
+  
+  #footer-links li {
+    list-style: none;
+    
+    a {
+      text-decoration: none;
+    }
+    
+    :hover {
+      color: $light-blue;
+    }
   }
 }
-
+  
 #social-media li {
   background-color: $light-gray-blue;
   a {
@@ -163,6 +179,15 @@ body {
 
 #lower-bar {
   background-color: $light;
+
+  div div {
+    display: flex;
+    align-items: center;  
+  }
+
+  p {
+    margin: 0;
+  }
 
   a {
     background-color: $medium-blue;

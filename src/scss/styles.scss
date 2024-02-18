@@ -1,40 +1,171 @@
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
 
-$dark-blue:  #6CA3C8; 
-$light-blue: #DEE8F1;
-$medium-blue:#B8C8DF;
-$light-gray:#EFEEEC;
-$gray: #EAE5E2;
+$darker-blue:  #0D1321; 
+$dark-blue: #1D2D44;
+$medium-blue: #2c4255;
+$light-blue: #3E5C76;
+$gray-blue:#748CAB;
+$light-gray-blue: #E9ECF1;
+$light: #F0EBD8;
 $dark-gray:#726258;
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-light {
+  font-weight: 300;
+}
+  
+.lato-bold {
+  font-weight: 700;
+}
 
 // Header
 #top-bar {
-  background-color: $dark-blue;
+  background-color: $darker-blue;
+
+  a {
+    color: $light;
+  }
+
+  :hover {
+    color: $gray-blue;
+  }
+
+  .active {
+    text-decoration: underline;
+  }
+}
+
+#hidden-box {
+  height: 96px;
+}
+
+#top-nav a {
+  color: $darker-blue;
+  
 }
 
 // Main Content
 // Banner
 #banner {
-  background: url(../img/mic-lateral.jpg) no-repeat fixed;
+  background: url(../img/vinyl.jpg) no-repeat;
+  height: 900px;
+
+  
+  h1 {
+    color: $darker-blue;
+  }
+  
+  a {
+    background-color: $medium-blue;
+    color: $light;
+  }
 }
 
 // Boxes
-#boxes .card-content a {
-  text-decoration: none;
-  text-transform: uppercase;
+
+#boxes {
+  .card:first-child {
+    background-color: $dark-blue;
+  }
+
+  .card:nth-child(2) {
+    background-color: $medium-blue;
+  }
+
+  .card:nth-child(3) {
+    background-color: $gray-blue;
+
+    .card-content {
+      color: $darker-blue;
+    }
+  }
+
+  .card:last-child {
+    background-color: $light-blue;
+  }
+
+  .card-content a {
+    color: $light;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  .card-btn a {
+    background-color: transparent;
+
+    :hover {
+      color: #f8f9fa;
+    }
+  }
+
+  .card-text {
+    color:$light;
+  }
+  
+}
+
+//Articles
+
+#articles {
+  a {
+    background-color: $medium-blue;
+    color: $light;
+  }
+
+}
+
+#article-2 {
+  background-color: $light-gray-blue;
+  
 }
 
 // Footer
+
+#footer {
+  background-color: $darker-blue;
+}
+
+#contact, #social-media h4 {
+  color: $light;
+}
+
+#footer-links a {
+  color: $light;
+}
+
 #footer-links li {
   list-style: none;
 
   a {
     text-decoration: none;
   }
+
+  :hover {
+    color: $light-blue;
+  }
 }
 
 #social-media li {
-  background-color: papayawhip;
+  background-color: $light-gray-blue;
+  a {
+    color: $darker-blue;
+  }
+  :hover {
+    color: $light-blue;
+  }
 }
 
+#lower-bar {
+  background-color: $light;
+
+  a {
+    background-color: $medium-blue;
+    color: $light;
+  }
+}

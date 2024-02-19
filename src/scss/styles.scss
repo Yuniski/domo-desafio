@@ -136,10 +136,14 @@ body {
     background-color: $medium-blue;
     color: $light;
   }
-}
 
-#article-2 {
-  background-color: $light-gray-blue;
+  img {
+    max-width: 400px;
+  }
+  
+  #article-2 {
+    background-color: $light-gray-blue;
+  }
 }
 
 // Footer
@@ -192,5 +196,32 @@ body {
   a {
     background-color: $medium-blue;
     color: $light;
+  }
+}
+
+
+//Responsive//
+@media (max-width: 768px) {
+  header {
+    max-width: 768px;
+  }
+
+  #boxes {
+    .card {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  #articles {
+    img {
+      max-width: 250px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  #boxes {
+    .card {
+    }
   }
 }

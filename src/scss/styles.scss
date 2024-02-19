@@ -40,6 +40,16 @@ body {
 #top-bar {
   background-color: $darker-blue;
 
+  ul {
+    margin-bottom: 0;
+    height: 40px;
+  }
+
+  li {
+    list-style: none;
+    margin-right: 1rem;
+  }
+
   a {
     color: $light;
     text-decoration: none;
@@ -253,10 +263,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  header {
-    min-width: 768px;
-  }
-
+  
   #articles {
     p {
       font-size: medium;

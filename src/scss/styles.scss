@@ -27,6 +27,9 @@ body {
   #banner .btn, #articles .btn {
     width: 135px;
   }
+  .row {
+    margin-right: 0 !important;
+  }
 }
 
 // Header
@@ -278,12 +281,23 @@ body {
     }
   }
 
-  #articles { 
-    article div {
-      display: flex;
-      flex-direction: column;
+  
+    #articles { 
+      article div {
+        display: flex;
+        flex-direction: column;
+        padding-right: 0 !important;
+  
+        div {
+          padding-right: 0 !important;
+        
+          p {
+            padding-right: 0 !important;
+          }
+        }
+      }
     }
-  }
+  
 
   #footer div {
     display: flex;

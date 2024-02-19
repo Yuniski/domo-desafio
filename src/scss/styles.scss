@@ -212,6 +212,7 @@ body {
     flex-direction: column;
     text-align: center;
  }
+ 
   #boxes {
     .card {
       margin-bottom: 0 !important;
@@ -238,11 +239,20 @@ body {
       max-width: 300px;
     }
   }
+  #contact, #footer-links {
+    text-align: center;
+  }
 }
 
 @media (max-width: 576px) {
 
   
+
+  #text-banner {
+    p {
+      font-size: medium;
+    }
+  }
 
   #articles { 
     article div {

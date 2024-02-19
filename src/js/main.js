@@ -39,7 +39,7 @@ const products = [
   {
     id: "headphones-btn",
     title: "Headphones",
-    imageUrl: "../img/auriculares.jpg",
+    imageUrl: "/img/auriculares.jpg",
     imageAlt: "Black Headphones",
     imageWidth: 400,
     text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, ea.",
@@ -47,7 +47,7 @@ const products = [
   {
     id: "microphones-btn",
     title: "Microphones",
-    imageUrl: "../img/mic-lateral.jpg",
+    imageUrl: "/img/mic-lateral.jpg",
     imageAlt: "Microphone",
     imageWidth: 400,
     text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, ea.",
@@ -55,7 +55,7 @@ const products = [
   {
     id: "plugins-btn",
     title: "Plugins",
-    imageUrl: "../img/vinyl.jpg",
+    imageUrl: "/img/vinyl.jpg",
     imageAlt: "Vinyl",
     imageWidth: 400,
     text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, ea.",
@@ -63,7 +63,7 @@ const products = [
   {
     id: "speakers-btn",
     title: "Headphones",
-    imageUrl: "../img/altavoz.jpg",
+    imageUrl: "/img/altavoz.jpg",
     imageAlt: "Speakers",
     imageWidth: 400,
     text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, ea.",

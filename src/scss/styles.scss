@@ -190,6 +190,14 @@ body {
       color: $light-blue;
     }
   }
+
+  #author {
+    cursor: pointer;
+  }
+
+  #author:hover {
+    color: $light-gray-blue;
+  }
 }
   
 #social-media li {
@@ -220,9 +228,24 @@ body {
   }
 }
 
+// SweetAlert Modal
+.swal2-popup {
+  letter-spacing: 0.5px;
+}
+
+.swal2-popup .swal2-icon {
+  color: $light-blue !important;
+  border-color: $light-blue !important;
+}
+
+.swal2-popup .swal2-actions .swal2-confirm {
+  background-color: $light-blue !important;
+  color: $light !important;
+  border-radius: 0;
+  border-color: $medium-blue !important;
+}
 
 //Responsive//
-
 @media (max-width: 992px) {
   #banner .jumbotron {
     margin-right: 0 !important;
@@ -285,25 +308,23 @@ body {
       font-size: medium;
     }
   }
-
   
-    #articles { 
-      article div {
-        display: flex;
-        flex-direction: column;
+  #articles { 
+    article div {
+      display: flex;
+      flex-direction: column;
+      padding-right: 0 !important;
+  
+      div {
         padding-right: 0 !important;
-  
-        div {
-          padding-right: 0 !important;
         
-          p {
-            padding-right: 0 !important;
-          }
+        p {
+          padding-right: 0 !important;
         }
       }
     }
+  }
   
-
   #footer div {
     display: flex;
     flex-direction: column;

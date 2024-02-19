@@ -137,6 +137,10 @@ body {
     color: $light;
   }
 
+  article div div:last-child {
+    text-align: end;
+  }
+
   img {
     max-width: 400px;
   }
@@ -201,23 +205,46 @@ body {
 
 
 //Responsive//
-@media (max-width: 768px) {
-  header {
-    max-width: 768px;
-  }
 
+@media (max-width: 992px) {
+  #top-nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+ }
   #boxes {
     .card {
       margin-bottom: 0 !important;
     }
   }
+}
+
+@media (max-width: 768px) {
+  header {
+    min-width: 768px;
+  }
+
 
   #articles {
+    p {
+      font-size: medium;
+    }
+
+    article div div:last-child {
+      text-align: center;
+    }
+
     img {
-      max-width: 250px;
+      max-width: 300px;
     }
   }
 }
 
 @media (max-width: 576px) {
+  #articles { 
+    article div {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }

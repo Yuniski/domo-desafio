@@ -2,6 +2,11 @@ import "../scss/styles.scss";
 import * as bootstrap from "bootstrap";
 import Swal from "sweetalert2";
 
+import headphonesImg from "@img/auriculares.jpg";
+import microphonesImg from "@img/mic-lateral.jpg";
+import pluginsImg from "@img/vinyl.jpg";
+import speakersImg from "@img/altavoz.jpg";
+
 // Image Zoom
 const img1 = document.getElementById("img-1");
 const img2 = document.getElementById("img-2");
@@ -39,7 +44,7 @@ const products = [
   {
     id: "headphones-btn",
     title: "Headphones",
-    imageUrl: "/img/auriculares.jpg",
+    imageUrl: headphonesImg,
     imageAlt: "Black Headphones",
     imageWidth: 400,
     text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, ea.",
@@ -47,7 +52,7 @@ const products = [
   {
     id: "microphones-btn",
     title: "Microphones",
-    imageUrl: "/img/mic-lateral.jpg",
+    imageUrl: microphonesImg,
     imageAlt: "Microphone",
     imageWidth: 400,
     text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, ea.",
@@ -55,7 +60,7 @@ const products = [
   {
     id: "plugins-btn",
     title: "Plugins",
-    imageUrl: "/img/vinyl.jpg",
+    imageUrl: pluginsImg,
     imageAlt: "Vinyl",
     imageWidth: 400,
     text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, ea.",
@@ -63,7 +68,7 @@ const products = [
   {
     id: "speakers-btn",
     title: "Headphones",
-    imageUrl: "/img/altavoz.jpg",
+    imageUrl: speakersImg,
     imageAlt: "Speakers",
     imageWidth: 400,
     text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, ea.",
